@@ -7,3 +7,5 @@ To be able to use this, you need the following files:
 For the Nordnet API you need nordnet api account and the following files:
 - creds.txt (your Norndet api credentials)
 - NEXTAPI_TEST_public.pem (from Nordnet api website)
+
+Some parts are in Finnish and some in English.. Sorry for the inconvenience.
