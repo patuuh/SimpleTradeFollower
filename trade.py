@@ -24,8 +24,8 @@ def main():
     while True:
 
         # UNCOMMENT BELOW IF YOU WANT TO RUN THIS CODE PERIODICALLY IN EVERY 10 SEC
-        #time.sleep(10.0 - ((time.time() - starttime) % 10.0))
         print(datetime.now().strftime('%Y-%m-%d %H:%M:%S.%f')[:-3])
+        #time.sleep(10.0 - ((time.time() - starttime) % 10.0))
 
         def run():
 
