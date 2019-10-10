@@ -1,1 +1,3 @@
-50000 EUR
+50000.0
+
+Percent difference from the 50 000 EUR start: -0.00%

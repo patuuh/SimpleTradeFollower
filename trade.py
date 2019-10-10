@@ -133,18 +133,19 @@ def main():
             with open("kaupat/" + yritys + ".txt","a") as file1:
                 file1.write("\n------------------------\nTehty toimeksianto: " + toimeksianto + "\n" + str(kpl) + " kpl \nhintaan: "
                  + str(eur_hinta) + " EUR \nKurssi: " + str(kurssi) + "\nBot bank before: " + str(bot_bank) + "\n" + "Bot bank after: " + str(bot_bank_after) + "\n\n")
-            with open("kaupat/bot.txt","r+") as file2:
+
                 percent = muutos(bot_bank, bot_bank_after)
                 if bot_bank > 50000:                    # Bots starting bank 50 000 EUR
                     file1.write("Percent difference: " + str(f'{percent:.2f}') + "%\n")
-                    file2.write(str(bot_bank_after) + "\n\nPercent difference from the 50 000 EUR start: " + str(f'{percent:.2f}') + "%")
                     print("Percent difference: " + str(f'{percent:.2f}') + "%")
                 else:
                     file1.write("Percent difference: -" + str(f'{percent:.2f}') + "%\n")
-                    file2.write(str(bot_bank_after) + "\n\nPercent difference from the 50 000 EUR start: -" + str(f'{percent:.2f}') + "%")
                     print("Percent difference: -" + str(f'{percent:.2f}') + "%")
-
-                
+            with open("kaupat/bot.txt","r+") as file1:
+                if bot_bank > 50000:                    # Bots starting bank 50 000 EUR
+                    file1.write(str(bot_bank_after) + "\n\nPercent difference from the 50 000 EUR start: " + str(f'{percent:.2f}') + "%")
+                else:           
+                    file1.write(str(bot_bank_after) + "\n\nPercent difference from the 50 000 EUR start: -" + str(f'{percent:.2f}') + "%")     
 
         def bot(kurssi, company, toimeksianto):
             """Bot to make actions in the market based on the emails received
