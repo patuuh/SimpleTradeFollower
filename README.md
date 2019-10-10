@@ -15,6 +15,7 @@ $$$$$$$$\                       $$\                  $$$$$$$$\        $$\ $$\
                                                                                                                           
 
 
+
 To be able to use this, you need the following files:
 - token.pickle and credentials.json (from gmail so you are able to fetch the shareville emails from your mail)
 
