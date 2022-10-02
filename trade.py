@@ -1,5 +1,5 @@
 # Trade bot to follow specified traders from Shareville
-# Patrik Jokela 8/2019
+# Patuuh 8/2019
 from __future__ import print_function
 import pickle
 import os.path
