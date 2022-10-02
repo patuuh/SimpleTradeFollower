@@ -1,6 +1,6 @@
 # nordnet API test 
 # https://api.test.nordnet.se/
-# Patrik Jokela 8/2019
+# Patuuh 8/2019
 import time
 import base64
 import requests
